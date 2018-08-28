@@ -9,9 +9,10 @@ Software Used for this project:
 Hardware used for this project:
 
 1) Two servo(Tower Pro SG-5010) Motor.
+![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/t/master/Images/img2.jpg "servo(Tower Pro SG-5010)")
 2) Arduino Uno.
 3) JHD(204A) lcd display.
 4) Panel Tilt mechanism.
 ![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/blob/master/Images/img1.jpeg "Panel Tilt mechanism")
-![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/blob/master/Images/img2.jpeg "servo(Tower Pro SG-5010)")
+
 
