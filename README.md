@@ -13,6 +13,6 @@ Hardware used for this project:
 3) JHD(204A) lcd display.
 4) Panel Tilt mechanism.
 5) HD Usb Webcam
-![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/blob/master/Images/img1.jpeg "Panel Tilt mechanism" |width=100)
+![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/blob/master/Images/img1.jpeg "Panel Tilt mechanism")
 
 
