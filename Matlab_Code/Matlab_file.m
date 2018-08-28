@@ -31,6 +31,12 @@ for i=1:1000    %set count depend on time
     % from the grayscale image to extract the red components in the image.
     diff_im = imsubtract(IMRED(:,:,1), rgb2gray(IMRED));
     
+    % from the grayscale image to extract the green components in the image.
+    %diff_im = imsubtract(IMRED(:,:,2), rgb2gray(IMRED));    
+    
+    % from the grayscale image to extract the blue components in the image.
+    %diff_im = imsubtract(IMRED(:,:,3), rgb2gray(IMRED));    
+    
     % Global image threshold using Otsu's method
     gr=graythresh(diff_im);
 
