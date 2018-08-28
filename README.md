@@ -12,3 +12,4 @@ Hardware used for this project:
 2) Arduino Uno.
 3) JHD(204A) lcd display.
 4) Panel Tilt mechanism.
+!(../master/123.jpg)
