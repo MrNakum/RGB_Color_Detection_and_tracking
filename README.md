@@ -8,7 +8,7 @@ Software Used for this project:
 
 Hardware used for this project:
 
-1) Two servo(Tower Pro SG-5010).
+1) Two servo(Tower Pro SG-5010) Motor.
 2) Arduino Uno.
 3) JHD(204A) lcd display.
 4) Panel Tilt mechanism.
