@@ -86,8 +86,9 @@ for i=1:1000    %set count depend on time
          
     end
     
-    hold off
-    end
+ %hold off
+ end
+ 
 %closing webcam object   
 delete(vidObj);
 
