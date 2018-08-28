@@ -15,3 +15,4 @@ Hardware used for this project:
 
 ![](https://github.com/MrNakum/RGB_Color_Detection_and_tracking/tree/master/Images/img1.jpeg "Panel Tilt mechanism")
 
+![alt text](https://github.com/creiser/drone-detection/blob/master/result.png "Detection results")
