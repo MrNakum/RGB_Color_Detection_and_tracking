@@ -13,7 +13,7 @@ vidObj = webcam;
 slash = ',';
 
 %SERIAL COMUNICATION%
-ARDUINO =serial('PORT','BAUD',57600); %PORT : ARDUINO COMMUNICATION PORT
+ARDUINO =serial('COM9','BAUD',2000000); %PORT : ARDUINO COMMUNICATION PORT
 
 %Turn on the serial port
 fopen(ARDUINO);
@@ -24,18 +24,11 @@ frameSize = size(frame);
 
 for i=1:1000    %set count depend on time
 
-
     % Get the snapshot of the current frame
     IMRED = snapshot(vidObj);
 
     % from the grayscale image to extract the red components in the image.
     diff_im = imsubtract(IMRED(:,:,1), rgb2gray(IMRED));
-    
-    % from the grayscale image to extract the green components in the image.
-    %diff_im = imsubtract(IMRED(:,:,2), rgb2gray(IMRED));    
-    
-    % from the grayscale image to extract the blue components in the image.
-    %diff_im = imsubtract(IMRED(:,:,3), rgb2gray(IMRED));    
     
     % Global image threshold using Otsu's method
     gr=graythresh(diff_im);
@@ -92,9 +85,8 @@ for i=1:1000    %set count depend on time
          
     end
     
- %hold off
- end
- 
+    hold off
+    end
 %closing webcam object   
 delete(vidObj);
 
