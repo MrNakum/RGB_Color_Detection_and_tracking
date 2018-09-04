@@ -63,13 +63,13 @@ void loop() {
 
   }
   lcd.setCursor(0, 0);
-  lcd.print("SX pos : ");
-  lcd.setCursor(10, 0);
+  lcd.print("Baering :");
+  lcd.setCursor(12, 0);
   lcd.print(posx);
   lcd.setCursor(0, 1);
-  lcd.print("SY pos : ");
-  lcd.setCursor(10, 1);
+  lcd.print("Elevation :");
+  lcd.setCursor(12, 1);
   lcd.print(posy);
-
+  lcd.clear();
 }
 
