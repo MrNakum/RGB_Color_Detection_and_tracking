@@ -15,7 +15,7 @@ Servo servoy;
 #define servocenterx   90  // center po#define  of x servo
 #define servocentery   90  // center po#define  of y  servo
 
-#define screenmaxx   1080 // max screen horizontal 
+#define screenmaxx   1280 // max screen horizontal 
 #define screenmaxy   720    // max screen vertical 
 
 #define servomaxx   180   // max degree servo horizontal (x) can turn
@@ -34,7 +34,7 @@ int incy = 20;
 void setup() {
 
   // put your setup code here, to run once:
-  Serial.begin(2000000);
+  Serial.begin(9600);
   lcd.begin(20, 4);
 
   pinMode(servopinx, OUTPUT);
@@ -64,9 +64,6 @@ void loop() {
     valx = word (XC);
     valy = word(YC);
 
-    //servox.write(posX1);
-    //servoy.write(posY1);
-
     posx = servox.read();
     posy = servoy.read();
 
@@ -82,19 +79,27 @@ void loop() {
     else if (valy > (screenmaxy / 2 + incy)) {
       if (posy <= 175)posy -= distancey;
     }
+
     servox.write(posx);
     servoy.write(posy);
 
+    lcd.clear();
+    lcd.setCursor(0, 0);
+
+
+    lcd.print("Baering :    ");
+    // lcd.setCursor(4,0);
+    lcd.print(posx); //add 0.11 to calibration and show us 0.00V when no load connected
+    //lcd.setCursor(10,0);
+    lcd.print((char)223);//unit for the current to be measured
+    lcd.setCursor(0, 1);
+    lcd.print("Elevation :   ");
+    //lcd.setCursor(4,1);
+    lcd.print(posy);
+    //lcd.setCursor(9,1);
+    lcd.print((char)223);
+
   }
-  lcd.setCursor(0, 0);
-  lcd.print("Baering :");
-  lcd.setCursor(12, 0);
-  lcd.print(posx);
-  lcd.setCursor(0, 1);
-  lcd.print("Elevation :");
-  lcd.setCursor(12, 1);
-  lcd.print(posy);
-  lcd.clear();
 }
 
 
